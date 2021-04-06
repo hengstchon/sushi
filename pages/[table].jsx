@@ -39,6 +39,7 @@ const Table = () => {
   const { table } = router.query
 
   const [input, setInput] = useState('')
+  const [menge, setMenge] = useState('1')
   const [order, setOrder] = useState([])
   const [showPrice, setShowPrice] = useState(false)
   const [priceInput, setPriceInput] = useState('')
@@ -59,6 +60,10 @@ const Table = () => {
     }
   }
 
+  const handleChangeMenge = e => {
+    setMenge(e.target.value)
+  }
+
   const handlePriceChange = e => {
     setPriceInput(e.target.value)
   }
@@ -68,7 +73,7 @@ const Table = () => {
     if (input === '666') {
       // 自定义价格
       const price = parseFloat(priceInput.replace(',', '.'))
-      const item = { id: 666, name: '', price, number: 1 }
+      const item = { id: 666, name: '', price, number: parseInt(menge) }
       order.push(item)
       setOrder([...order])
     } else {
@@ -77,9 +82,9 @@ const Table = () => {
       if (item) {
         const itemInOrder = order.find(i => !i.deleted && i.id == item.id)
         if (itemInOrder) {
-          itemInOrder.number += 1
+          itemInOrder.number += parseInt(menge)
         } else {
-          item.number = 1
+          item.number = parseInt(menge)
           order.push(item)
         }
         setOrder([...order])
@@ -133,6 +138,16 @@ const Table = () => {
                 />
               </div>
             )}
+            <div className="mt-2">
+              <label>Menge:</label>
+              <input
+                className="ml-2 h-11 w-32 border-2 rounded"
+                type="number"
+                name="number"
+                value={menge}
+                onChange={handleChangeMenge}
+              />
+            </div>
           </div>
           <button className="ml-10 bg-blue-200 py-2 px-6 rounded" type="submit">
             Hinzufügen
