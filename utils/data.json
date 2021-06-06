@@ -226,5 +226,18 @@
   { "id": 522, "name": "Gebackene Banane(Grünteeeis)", "price": 4.2 },
   { "id": 523, "name": "Bananenklebreis", "price": 3.5 },
   { "id": 524, "name": "Sesameis", "price": 1.2 },
-  { "id": 525, "name": "Grünteeeis", "price": 1.2 }
+  { "id": 525, "name": "Grünteeeis", "price": 1.2 },
+
+  { "id": 601, "name": "601", "price": 5.9 },
+  { "id": 602, "name": "602", "price": 5.9 },
+  { "id": 603, "name": "603", "price": 5.9 },
+  { "id": 604, "name": "604", "price": 5.9 },
+  { "id": 605, "name": "605", "price": 6.9 },
+  { "id": 606, "name": "606", "price": 7.5 },
+  { "id": 607, "name": "607", "price": 7.5 },
+  { "id": 608, "name": "608", "price": 5.0 },
+  { "id": 609, "name": "609", "price": 5.0 },
+  { "id": 610, "name": "610", "price": 5.0 },
+  { "id": 611, "name": "611", "price": 5.0 },
+  { "id": 612, "name": "612", "price": 6.9 }
 ]
