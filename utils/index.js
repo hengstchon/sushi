@@ -18,4 +18,4 @@ export const range = (start, end) => {
   return Array.from({ length }, (_, i) => start + i)
 }
 
-export const TABLE_NUM = 9
+export const TABLE_NUM = 40
