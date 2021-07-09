@@ -184,7 +184,7 @@ const Table = () => {
             </div>
             <div className="mt-8 flex justify-center">
               <a
-                className="block w-40 h-14 px-4 rounded-lg flex justify-center items-center bg-red-200"
+                className="w-40 h-14 px-4 rounded-lg flex justify-center items-center bg-red-200"
                 onClick={clearTable}
               >
                 Fertig
