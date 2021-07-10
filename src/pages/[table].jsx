@@ -90,13 +90,9 @@ const Table = () => {
 
   const clearTable = () => {
     setOrder([[]])
+    setActiveIndex(0)
     removeLocalStorage(table)
   }
-
-  useEffect(() => {
-    console.log('order:', order)
-    console.log('ac:', activeIndex)
-  }, [order])
 
   return (
     <div>
@@ -113,15 +109,13 @@ const Table = () => {
             reduceOneItem={reduceOneItem}
           />
 
-          {order[activeIndex] && (
-            <div className="mt-14">
-              <OperationButtons
-                addSubOrder={addSubOrder}
-                removeActiveSubOrder={removeActiveSubOrder}
-                clearTable={clearTable}
-              />
-            </div>
-          )}
+          <div className="mt-14">
+            <OperationButtons
+              addSubOrder={addSubOrder}
+              removeActiveSubOrder={removeActiveSubOrder}
+              clearTable={clearTable}
+            />
+          </div>
         </div>
       </div>
     </div>

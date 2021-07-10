@@ -9,11 +9,11 @@ const OrderContent = ({
 }) => {
   return (
     <div>
-      <div className="space-y-4">
+      <div>
         {order.map((subOrder, index) => (
           <div
             key={index}
-            className={`p-4 rounded-lg bg-white divide-y divide-dashed divide-opacity-50 ${
+            className={`mt-4 p-4 rounded-lg bg-white divide-y divide-dashed divide-opacity-50 ${
               index === activeIndex
                 ? 'border-4 border-red-200'
                 : 'border border-dotted'

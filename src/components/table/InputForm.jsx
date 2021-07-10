@@ -66,7 +66,7 @@ const InputForm = ({ addItems }) => {
           <input
             className="ml-2 h-11 w-32 border-2 rounded"
             name="number"
-            type="number"
+            type="tel"
             value={input}
             onChange={handleChange}
           />
