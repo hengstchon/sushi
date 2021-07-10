@@ -13,7 +13,7 @@ export default function Home() {
       <main className="h-screen">
         <Header title="Eat Sushi & More" />
 
-        <div className="p-6 space-y-4 text-xl border">
+        <div className="p-6 text-xl">
           {Array.from({ length: TABLE_NUM }).map((_, i) => (
             <Table key={i} table={String(i + 1)} />
           ))}
