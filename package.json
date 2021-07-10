@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export && surge ./out eat-sushi.surge.sh"
+    "export": "next build && next export",
+    "deploy": "next build && next export && surge ./out eat-sushi.surge.sh",
+    "deploy:test": "next build && next export && surge ./out eat-sushi-test.surge.sh"
   },
   "dependencies": {
     "next": "^10.0.9",

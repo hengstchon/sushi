@@ -6,7 +6,7 @@ const Header = ({ title }) => {
   const { pathname } = router
 
   return (
-    <div className="flex justify-center items-center h-14 text-2xl shadow-md">
+    <div className="flex justify-center items-center h-14 text-2xl border-b-2">
       {pathname !== '/' && (
         <Link href="/">
           <a className="h-8 w-8 absolute left-4">
