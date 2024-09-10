@@ -8,7 +8,7 @@ const Header = ({ title }) => {
   return (
     <div className="flex justify-center items-center h-14 text-2xl border-b">
       {pathname !== '/' && (
-        <Link href="/">
+        <Link href="/" legacyBehavior>
           <a className="h-8 w-8 absolute left-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
